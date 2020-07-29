@@ -1,4 +1,5 @@
 {
   "name": "numberGuesser",
-  "displayName": "numberGuesser"
+  "displayName": "numberGuesser",
+  "orientation": "default"
 }
