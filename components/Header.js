@@ -6,7 +6,7 @@ import Colors from '../constants/colors';
 const Header = props => {
   return (
     <View style={styles.header}>
-      <TitleText style={styles.headerTitle}>{props.title}</TitleText>
+      <TitleText style={styles.title}>{props.title}</TitleText>
     </View>
   );
 };
@@ -16,9 +16,14 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 70,
     paddingTop: 24,
-    backgroundColor: Colors.primary,
+    backgroundColor: Platform.OS === 'android' ? Colors.primary : 'white',
     alignItems: 'center',
     justifyContent: 'center',
+    borderBottomColor: Platform.OS === 'ios' ? '#ccc' : 'transparent',
+    borderBottomWidth: Platform.OS === 'ios' ? 1 : 0,
+  },
+  title: {
+    color: Platform.OS === 'ios' ? Colors.primary : 'white',
   },
 });
 
