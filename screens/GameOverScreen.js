@@ -59,8 +59,6 @@ const styles = StyleSheet.create({
     borderRadius: (Dimensions.get('window').width * 0.7) / 2,
     borderWidth: 3,
     borderColor: 'black',
-    width: 200,
-    height: 200,
     overflow: 'hidden',
     marginVertical: Dimensions.get('window').height / 30,
   },
